@@ -687,12 +687,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #31d0aa;;
 }
 
-
-
 .control{
     fill:#f4f4fd;
    
 }
+
 
 
 .footer-button{
@@ -767,31 +766,6 @@ fill: #fff;
     background-color:  rgba(46, 47, 66, 0.40);
     z-index: 10;
 }
-
-.form-btn{
-    border-radius: 4px;
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.04em;
-    font-family: "Roboto", sans-serif;
-    border: none;
-    
-}
-.form-btn:hover {
-    background-color: #404bbf;
-}
-
-.form-btn:focus {
-
-    background-color: #404bbf;
-}
-.form-btn-iteam {
-fill: #FFFFFF;
-}
-
-/* form*/
 .modal {
     transform: translateY(-70%) translateX(-50%);
     position: absolute;
@@ -808,26 +782,7 @@ fill: #FFFFFF;
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 150ms ease-in-out;
-        transition-property: opacity, transform;
-}
-
-.backdrop {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: 150ms ease-in-out;
-    transition-property:opacity, visibility;
-}
-.backdrop.is-open{
-    opacity: 0;
-    visibility: visible;
-    pointer-events: initial;
-}
-
-.backdrop.is-open .modal{
-    opacity: 1;
-transform: translateY(-50%) translateX(-50%);
-
+    transition-property: opacity, transform;
 }
 .modal-btn {
     position: absolute;
@@ -850,10 +805,60 @@ transform: translateY(-50%) translateX(-50%);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 .modal-btn:hover,
-.modal-btn:focus{
+.modal-btn:focus {
     background-color: #404BBF;
     fill: #ffffff;
+}
+
+/*.form-btn{
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    
+}
+.form-btn:hover {
+    background-color: #404bbf;
+}
+
+.form-btn:focus {
+
+    background-color: #404bbf;
+}
+*/
+
+.form-btn-iteam {
+fill: #FFFFFF;
+}
+
+
+
+
+/* form*/
+
+.backdrop {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 150ms ease-in-out;
+    transition-property:opacity, visibility;
+}
+.backdrop.is-open{
+    opacity: 0;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.backdrop.is-open .modal{
+    opacity: 1;
+transform: translateY(-50%) translateX(-50%);
+
 }
 
 .modal-caption {
@@ -927,7 +932,7 @@ margin-bottom: 8px;
 .modal-form-icon:focus{
     fill: #4D5AE5;
 }
-.modal-form-field{
+.modal-form-comment{
     padding-bottom: 16px;
 }
 .modal-form-textarea {
@@ -944,7 +949,9 @@ margin-bottom: 8px;
 .modal-form-textarea:focus{
     border-color: #4D5AE5;
 }
-
+.modal-form-textarea::placeholder {
+    color: rgb(64, 64, 64, 0.3);
+}
 .button-submit{
     width: 170px;
     height: 55px;
@@ -958,7 +965,4 @@ margin-bottom: 8px;
     font-family: "Roboto", sans-serif;
     border: none;
      
-}
-.modal-form-textarea::placeholder{
-    color: rgb(64, 64, 64, 0.3);
 }
