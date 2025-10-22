@@ -536,12 +536,22 @@
               </a>
             </li>
           </ul>
-          <form class="" name="ubscribe-form">
-            <label for="footer-subscribe">Subscribe</label>
-            <input type="text" id="footer-subscribe" />
-            <button class="form-btn" type="submit">
+        </div>
+        <div class="footer-button">
+          <p class="footer-button-titel">Subscribe</p>
+          <form class="footer-button-form" name="ubscribe-form">
+            <label class="visually-hidden" for="footer-subscribe"
+              >Subscribe</label
+            >
+            <input
+              class="footer-button-input"
+              type="email"
+              name="user-email"
+              id="footer-subscribe"
+              placeholder="E-mail" />
+            <button class="footer-button-btn" type="submit">
               Subscribe
-              <svg class="form-btn-iteam" width="24" height="20">
+              <svg class="footer-button-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
