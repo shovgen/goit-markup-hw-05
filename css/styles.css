@@ -782,14 +782,13 @@ fill: #fff;
     left: 50%;
     width: 408px;
     min-height: 584px;
-   
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
-    background: #fcfcfc;
+    background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 
 }
@@ -800,18 +799,16 @@ fill: #fff;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: none;
     background-color: #E7E9FC;
-    transition: color 300ms ease-in;
+   
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -824,7 +821,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 
 .form-btn-iteam {
 fill: #FFFFFF;
-
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* form*/
