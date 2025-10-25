@@ -713,6 +713,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     
 }
+.footer-button-label{
+    
+}
 .footer-button-btn-wraper{
     display: flex;
     gap: 24px;
